@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/right_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/right_icon"
+        android:padding="7dp"/>
+
+    <TextView
+        android:id="@+id/module_name"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/right_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is Cloud Computing ?"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:textColor="@color/Black"
+        android:layout_marginStart="20dp"/>
+
+</RelativeLayout>

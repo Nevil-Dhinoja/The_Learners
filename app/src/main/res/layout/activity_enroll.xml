@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Enroll_Activity"
+    android:paddingStart="15dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@+id/enroll_course"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduction to R"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/enroll_category"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/enroll_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduction to R"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/enroll_paragraph"
+        android:layout_below="@id/enroll_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/demo_par"
+        android:lineHeight="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/enroll_what"
+        android:layout_below="@id/enroll_paragraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What you learn in Introduction to R ?"
+        android:lineHeight="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/enroll_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/enroll_what"
+        android:layout_marginTop="15dp" />
+
+    <androidx.cardview.widget.CardView
+        android:elevation="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginEnd="-20dp">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/enroll_btn"
+                android:background="@color/Blue"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Enroll Now"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:letterSpacing="0.1"
+            android:text="Share your in-app experience"
+            android:fontFamily="@font/montserrat"
+            android:background="@color/Blue"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:layout_gravity="center"
+            android:id="@+id/feedback_rate"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:numStars="5"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:progressTint="@color/Blue"/>
+
+        <EditText
+            android:hint="Improvements or new features you want us to add"
+            android:id="@+id/feedback_text"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="top"
+            android:textSize="14sp"
+            android:background="@drawable/feedback_edittext"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/later_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_design"
+                android:text="Later"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/White" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"                android:background="@drawable/button_design"
+                android:text="Submit"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/White" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

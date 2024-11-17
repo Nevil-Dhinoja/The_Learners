@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    1. go to my profile page to view all certificates-->
+    <style name="go_to_my_profile">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">@color/White</item>
+        <item name="stFont">@font/alata</item>
+        <item name="stTextSize">12sp</item>
+        <item name="stColorBackground">@color/gray</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">1dp</item>
+        <item name="stStrokeColor">#fff</item>
+<!--        <item name="stIconStart">@drawable/androidicon</item>-->
+        <!--        <item name="stIconEnd">@drawable/ic</item>-->
+        <item name="stLength">SHORT</item> SHORT or SHORT
+        <item name="stGravity">center</item> top or top
+        <item name="stRadius">10dp</item>
+    </style>
+
+
+
+    <!--    2. pdf generated-->
+    <style name="pdf_generated">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/alata</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#2ED600</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">1dp</item>
+        <item name="stStrokeColor">#fff</item>
+        <item name="stIconStart">@drawable/pdf_icon</item>
+        <!--        <item name="stIconEnd">@drawable/ic</item>-->
+        <item name="stLength">SHORT</item> SHORT or SHORT
+        <item name="stGravity">top</item> top or top
+        <item name="stRadius">10dp</item>
+    </style>
+
+
+
+    <!--    3. Launching premium n short time than you can give feedback-->
+    <style name="feedback">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/alata</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">@color/gray</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">1dp</item>
+        <item name="stStrokeColor">#fff</item>
+        <!--        <item name="stIconStart">@drawable/ic</item>-->
+        <!--        <item name="stIconEnd">@drawable/ic</item>-->
+        <item name="stLength">SHORT</item> SHORT or SHORT
+        <item name="stGravity">top</item> top or top
+        <item name="stRadius">10dp</item>
+    </style>
+
+
+
+    <!--    3. logout successfully-->
+    <style name="logout_successfully">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/alata</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">@color/gray</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">1dp</item>
+        <item name="stStrokeColor">#fff</item>
+        <item name="stIconStart">@drawable/logout_icon2</item>
+        <item name="stLength">SHORT</item> SHORT or SHORT
+        <item name="stGravity">top</item> top or top
+        <item name="stRadius">10dp</item>
+    </style>
+
+</resources>

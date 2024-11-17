@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".activities.TopicContentActivity"
+    android:background="@color/white">
+
+    <SeekBar
+        android:layout_alignParentTop="true"
+        android:id="@+id/content_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:max="30"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:progress="10"
+        android:progressTint="@color/Blue"
+        android:progressBackgroundTint="@color/Blue"
+        android:thumb="@drawable/thum_seekbar"
+        />
+
+    <TextView
+        android:id="@+id/content_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_seekbar"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/aclonica"
+        android:text="What is Google Cloud ?"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <WebView
+        android:layout_below="@id/content_topic"
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="50dp"/>
+
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_above="@id/btn"-->
+    <!--        android:layout_below="@id/content_topic"-->
+    <!--        android:scrollbarThumbHorizontal="@color/blue">-->
+
+
+    <!--        -->
+
+    <!--    </ScrollView>-->
+
+
+    <RelativeLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/content_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="end"
+            android:background="@drawable/module_start_btn"
+            android:fontFamily="@font/montserrat_medium"
+            android:padding="1dp"
+            android:text="Previous"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/content_next"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/module_start_btn"
+            android:fontFamily="@font/montserrat_medium"
+            android:padding="1dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/White" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
