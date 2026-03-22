@@ -182,8 +182,8 @@ public class LoginActivity extends AppCompatActivity {
         new AsyncTask<Void, Void, Void>() {
             @Override
             protected Void doInBackground(Void... voids) {
-                final String username = "ndhinoja188@rku.ac.in"; // Your email address without the "mailto:" prefix
-                final String password = "N2955467"; // Your email password
+                final String username = ""; // Your email address without the "mailto:" prefix
+                final String password = ""; // Your email password
                 GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(getBaseContext());
                 String personName = account.getDisplayName();
                 Properties props = new Properties();
