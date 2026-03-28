@@ -209,7 +209,7 @@ designed to teach a real concept through a working, shippable product.
 
 <br/>
 
-If this project helped you or saved you time, a star on the repo goes a long way. 
+If this project helped you or saved you time, a star on the repo goes a long way.
 
 ![Views](https://komarev.com/ghpvc/?username=Nevil-Dhinoja&repo=data-analyst-agent&color=blue)
 
